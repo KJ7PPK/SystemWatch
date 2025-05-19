@@ -1,0 +1,7 @@
+[Unit]
+Description=System watchdog and NTFY notifier
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/systemwatch.sh
+Type=oneshot
